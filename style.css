@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(images/bg-intro-desktop.png);
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.title h1 {
+  color: white;
+  font-size: 65px;
+  line-height: 1.1;
+}
+
+.title p {
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+.container-form {
+  padding-top: 200px;
+}
+
+.offer {
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  background-color: white;
+  padding: 30px 40px 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+input {
+  padding: 20px 20px;
+  margin: 10px 0;
+  font-size: 17px;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.error {
+  text-align: end;
+  color: red;
+  font-size: 10px;
+}
+
+button {
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  border-color: none;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 0 5px hsl(154, 59%, 45%);
+}
+
+button:hover {
+  background-color: hsl(154, 70%, 62%);
+}
+
+.form p {
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(180, 171, 171);
+  margin-top: 20px;
+}
+
+.form a {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+
+/* HDPI SCREEN */
+@media screen and (max-width: 1440px) {
+  .title {
+    padding-right: 90px;
+    padding-left: 150px;
+  }
+
+  .title h1 {
+    font-size: 50px;
+  }
+
+  .title p {
+    font-size: 16px;
+  }
+
+  .container-form {
+    padding-top: 120px;
+  }
+
+  .form {
+    width: 450px;
+  }
+
+  input {
+    padding: 16px 30px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+
+  .form p {
+    font-size: 10px;
+  }
+}
+
+/* MDPI SCREEN */
+@media screen and (max-width: 1280px) {
+  .title {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+}
+
+/* TABLET */
+@media screen and (min-device-width: 640px) and (max-device-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    margin-top: 100px;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .title h1 {
+    font-size: 50px;
+  }
+
+  .container-form {
+    padding-top: 0px;
+  }
+}
+
+/* PHONE */
+
+@media screen and (max-device-width: 640px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    margin-top: 50px;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .title h1 {
+    font-size: 30px;
+  }
+
+  .container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .offer {
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
+    width: 190px;
+  }
+
+  .form {
+    padding: 15px 15px 30px 15px;
+    margin-bottom: 100px;
+    width: 300px;
+  }
+
+  .form p {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 11px;
+  }
+}

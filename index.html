@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>
+          Learn to code by <br />
+          watching others
+          <p>
+            See how experienced developers solve problems in real-time. <br />
+            Watching scripted tutorials is great, but understanding how <br />
+            developers think is invaluable.
+          </p>
+        </h1>
+      </div>
+
+      <div class="container-form">
+        <div class="offer">
+          <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
+        </div>
+        <form id="form">
+          <div class="form">
+            <input
+              type="text"
+              name="fristname"
+              id="fristname"
+              placeholder="Frist Name"
+              class="error-icon"
+            />
+            <div class="error"></div>
+
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Last Name"
+              class="error-icon"
+            />
+            <div class="error"></div>
+
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              class="error-icon"
+            />
+            <div class="error"></div>
+
+            <input
+              type="password"
+              name="pwd"
+              id="pwd"
+              placeholder="Password"
+              class="error-icon"
+            />
+            <div class="error"></div>
+
+            <button type="submit" id="submit">CLAIM YOUR FREE TRIAL</button>
+
+            <p>
+              By clicking the button, you are agreeing to our
+              <a href="">Terms and Services</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="validation.js"></script>
+  </body>
+</html>
